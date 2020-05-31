@@ -2,12 +2,12 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/serverless.ts",
+            "src": "api/slack-oauth.ts",
             "use": "@now/node",
             "config": {
                 "helpers": false
             }
         }
     ],
-    "routes": [{ "src": "/.*", "dest": "/api/serverless.ts" }]
+    "routes": [{ "src": "/slack/oauth", "dest": "/api/slack-oauth.ts" }]
 }
