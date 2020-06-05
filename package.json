@@ -14,22 +14,6 @@
         "lint": "run-p -l -n -c --aggregate-output lint:*",
         "lint:fix": "run-p -l -n -c --aggregate-output lint:fix:*"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{ts,tsx}": [
-            "yarn typecheck",
-            "yarn lint:fix:ts",
-            "git add"
-        ],
-        "*.{json}": [
-            "yarn lint:fix:json",
-            "git add"
-        ]
-    },
     "dependencies": {
         "bent": "7.3.2",
         "fastify": "2.14.1"

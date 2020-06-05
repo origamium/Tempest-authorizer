@@ -2,12 +2,12 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/slack-oauth.ts",
+            "src": "api/slack/oauth.ts",
             "use": "@now/node",
             "config": {
                 "helpers": false
             }
         }
     ],
-    "routes": [{ "src": "/slack/oauth", "dest": "/api/slack-oauth.ts" }]
+    "routes": [{ "src": "/slack/oauth", "dest": "/api/slack/oauth.ts" }]
 }
