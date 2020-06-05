@@ -9,7 +9,7 @@ const slackGetOAuthAccess = bent("https://slack.com/api/oauth.access", "GET", "j
 
 const slack = (): fastify.FastifyInstance => {
     const app = fastify(process.env.NODE_ENV === "development" ? { logger: true } : {});
-    app.get("/", async (req, res) => {
+    app.get("/api/oauth", async (req, res) => {
         const { query } = req.query;
         if (query.state) {
             res.status(200);
