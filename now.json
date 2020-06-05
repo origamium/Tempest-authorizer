@@ -1,9 +1,8 @@
 {
     "version": 2,
     "functions": {
-        "api/slack/oauth.ts": {
-            "memory": 3000,
-            "maxDuration": 10
+        "api/oauth.ts": {
+            "maxDuration": 3
         }
     }
 }
