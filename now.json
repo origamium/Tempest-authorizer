@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-        "api/oauth.ts": {
+        "api/slack/oauth.ts": {
             "maxDuration": 3
         }
     }
