@@ -1,13 +1,9 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "api/slack/oauth.ts",
-            "use": "@now/node",
-            "config": {
-                "helpers": false
-            }
+    "functions": {
+        "api/slack/oauth.ts": {
+            "memory": 3000,
+            "maxDuration": 10
         }
-    ],
-    "routes": [{ "src": "/slack/oauth", "dest": "/api/slack/oauth.ts" }]
+    }
 }
