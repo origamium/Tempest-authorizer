@@ -19,7 +19,7 @@
         "fastify": "2.14.1"
     },
     "devDependencies": {
-        "@now/node": "1.6.1",
+        "@now/node": "1.7.0",
         "@types/bent": "7.0.2",
         "@types/node": "12.12.44",
         "@typescript-eslint/eslint-plugin": "3.1.0",
