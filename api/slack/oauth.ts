@@ -20,7 +20,7 @@ const slack = (): fastify.FastifyInstance => {
                 client_id: SLACK_CLIENT_ID,
                 client_secret: SLACK_CLIENT_SECRET,
                 code: query.access_token as string,
-                redirect_uri: "https://tempest-authorizer.origamium.net/slack-oauth",
+                redirect_uri: "https://tempest-authorizer.origamium.net/api/slack/oauth",
             });
 
             res.status(200);
