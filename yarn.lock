@@ -32,10 +32,10 @@
     ts-node "8.9.1"
     typescript "3.9.3"
 
-"@types/bent@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@types/bent/-/bent-7.0.2.tgz#ff3ab6d2112e08b6b22b2e1582ca182c5de090bf"
-  integrity sha512-ppRvU9y5oD33ylKNnLEeQx7PNizULq9XUwZT7tMZKZ5e5MYoNruP92poHv3zCsJtWFwB8pGgntHI6YbyOAZB0Q==
+"@types/bent@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@types/bent/-/bent-7.3.0.tgz#c3a99e790eceba77e0b87423eef35f0b034678a5"
+  integrity sha512-EitzswEqzdUc1Yqnyuqd90aLQCgHeTCwd7GMoL56saxpNt5Mi6v8Sr4BrlKd0NYRwdwcayQqb2QuKjGYM7GegQ==
   dependencies:
     "@types/node" "*"
 
@@ -206,10 +206,10 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-bent@7.3.2:
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/bent/-/bent-7.3.2.tgz#4e4b3f71e44e4eb3409b811f51a2cd5ae59818ef"
-  integrity sha512-iI9r7tiiaWX8tToVBskcfU7omPb3Z1GoLhPZ1gqJD/K8jtHlPNB9dsD2RqiLc4xYOawsCzP8psnSuILN3PK9dg==
+bent@7.3.7:
+  version "7.3.7"
+  resolved "https://registry.yarnpkg.com/bent/-/bent-7.3.7.tgz#6dc42fea1b58c6ebe04146c39aba666f9c13cb0c"
+  integrity sha512-APYx9bkrq3olflUbDeymwmQLQLR39d0Qz/xbvWG3pgKtklrxHvFUHQgEEK4Tp5e0pnvQQCQM7Vdb3SzErmTtZQ==
   dependencies:
     bytesish "^0.4.1"
     caseless "~0.12.0"
