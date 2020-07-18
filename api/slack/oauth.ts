@@ -16,6 +16,7 @@ const slack = (): FastifyInstance => {
             res.header("content-type", "application/json");
             res.send(JSON.stringify(code));
         } else if (temp_code) {
+            console.log(temp_code)
             const slackOAuthAccessRequest = await slackGetOAuthAccess("", {
                 client_id: SLACK_CLIENT_ID,
                 client_secret: SLACK_CLIENT_SECRET,
