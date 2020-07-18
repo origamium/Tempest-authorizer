@@ -35,7 +35,7 @@ const slack = (): FastifyInstance => {
 
             res.status(200);
             res.header("content-type", "application/json");
-            res.send(slackOAuthAccessRequest);
+            res.send(slackOAuthAccessRequest.json());
         }
 
         res.status(400);
