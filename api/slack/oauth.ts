@@ -1,5 +1,6 @@
 import { NowRequest, NowResponse } from "@now/node";
 import bent from "bent";
+import formurlencoded from "form-urlencoded";
 import fastify, { FastifyInstance } from "fastify";
 
 const SLACK_CLIENT_ID = process.env.SLACK_CLIENT_ID;
@@ -16,16 +17,18 @@ const slack = (): FastifyInstance => {
             res.header("content-type", "application/json");
             res.send(JSON.stringify(code));
         } else if (temp_code) {
-            const slackOAuthAccessRequest = await slackGetOAuthAccess("", {
-                client_id: SLACK_CLIENT_ID,
-                client_secret: SLACK_CLIENT_SECRET,
-                code: temp_code,
-                redirect_uri: "https://tempest-authorizer.origamium.net/api/slack/oauth",
-            });
+            const slackOAuthAccessRequest = await slackGetOAuthAccess(
+                "",
+                formurlencoded({
+                    client_id: SLACK_CLIENT_ID,
+                    client_secret: SLACK_CLIENT_SECRET,
+                    code: temp_code,
+                    redirect_uri: "https://tempest-authorizer.origamium.net/api/slack/oauth",
+                })
+            );
 
             res.status(200);
             res.header("content-type", "application/json");
-            res.send(temp_code)
             res.send(slackOAuthAccessRequest);
         }
 
