@@ -1,5 +1,4 @@
 import { NowRequest, NowResponse } from "@now/node";
-import bent from "bent";
 import formurlencoded from "form-urlencoded";
 import fastify, { FastifyInstance } from "fastify";
 import fetch from "node-fetch";
