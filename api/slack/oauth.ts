@@ -9,7 +9,11 @@ const SLACK_CLIENT_SECRET = process.env.SLACK_CLIENT_SECRET;
 const slack = (): FastifyInstance => {
     const app = fastify(process.env.NODE_ENV === "development" ? { logger: true } : {});
     app.get("/api/slack/oauth", async (req, res) => {
-        const { code, temp_code, state } = req.query as { temp_code?: string; code?: string, state?: string };
+        const { code, temp_code, state } = req.query as {
+            temp_code?: string;
+            code?: string;
+            state?: string;
+        };
         if (code) {
             res.status(200);
             res.header("content-type", "application/json");
@@ -35,7 +39,8 @@ const slack = (): FastifyInstance => {
 
             res.status(200);
             res.header("content-type", "application/json");
-            res.send(slackOAuthAccessRequest.json());
+            const json = await slackOAuthAccessRequest.json();
+            res.send(json);
         }
 
         res.status(400);
