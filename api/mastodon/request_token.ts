@@ -19,7 +19,7 @@ const mastodonRequestToken = (): FastifyInstance => {
     const app = fastify(process.env.NODE_ENV === "development" ? { logger: true } : {});
     app.get("/api/mastodon/v1/:provider", async (req, res) => {
         const providerName = req.params;
-        const { code, scope } = req.body as { code?: string; scope?: string };
+        const { code, scope } = req.query as { code?: string; scope?: string };
 
         if (typeof code !== "string") {
             res.status(400);
