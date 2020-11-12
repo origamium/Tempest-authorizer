@@ -48,7 +48,7 @@ const mastodonRequestToken = (): FastifyInstance => {
                 redirect_uri: "urn:ietf:wg:oauth:2.0:oob",
                 code,
                 ...(scope ? { scope } : {}),
-                grant_type: "code",
+                grant_type: "authorization_code",
             };
             const payloadEntries = Object.entries(payload);
 
