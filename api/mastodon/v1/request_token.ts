@@ -18,7 +18,7 @@ const getProviderData = (provider: string): ProviderData | never => {
 const mastodonRequestToken = (): FastifyInstance => {
     const app = fastify(process.env.NODE_ENV === "development" ? { logger: true } : {});
     app.post("/api/mastodon/v1/request_token", async (req, res) => {
-        const { code, scope, provider: providerName } = req.query as {
+        const { code, scope, provider: providerName } = req.body as {
             code?: string;
             scope?: string;
             provider?: string;
