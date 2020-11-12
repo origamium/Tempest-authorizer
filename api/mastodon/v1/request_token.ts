@@ -9,7 +9,7 @@ const getProviderData = (provider: string): ProviderData | never => {
     switch (provider) {
         case "mstdnjp":
             return mstdnjp;
-        case "pawoo":
+        case "pawoonet":
             return pawoo;
         default:
             throw new Error(`unknown provider name: ${provider}`);
