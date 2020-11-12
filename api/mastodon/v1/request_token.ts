@@ -62,7 +62,7 @@ const mastodonRequestToken = (): FastifyInstance => {
             res.send(json);
         } catch (e) {
             res.status(400);
-            res.send(`bad request: ${e.message}`);
+            res.send(`bad request: ${e}`);
             return;
         }
     });
