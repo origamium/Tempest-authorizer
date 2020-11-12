@@ -2,7 +2,7 @@ import { NowRequest, NowResponse } from "@now/node";
 import formurlencoded from "form-urlencoded";
 import fastify, { FastifyInstance } from "fastify";
 import fetch from "node-fetch";
-import { ProviderData, mstdnjp, pawoo } from "./apikeys";
+import { ProviderData, mstdnjp, pawoo } from "../apikeys";
 
 const getProviderData = (provider: string): ProviderData | never => {
     switch (provider) {
@@ -17,17 +17,20 @@ const getProviderData = (provider: string): ProviderData | never => {
 
 const mastodonRequestToken = (): FastifyInstance => {
     const app = fastify(process.env.NODE_ENV === "development" ? { logger: true } : {});
-    app.get("/api/mastodon/v1/:provider", async (req, res) => {
-        const providerName = req.params;
-        const { code, scope } = req.query as { code?: string; scope?: string };
+    app.get("/api/mastodon/v1/request_token", async (req, res) => {
+        const { code, scope, provider: providerName } = req.query as {
+            code?: string;
+            scope?: string;
+            provider?: string;
+        };
 
-        if (typeof code !== "string") {
+        if (typeof providerName !== "string") {
             res.status(400);
-            res.send("bad request: parameter is not string");
+            res.send("bad request: provider is not string");
             return;
         }
 
-        if (typeof providerName !== "string") {
+        if (typeof code !== "string") {
             res.status(400);
             res.send("bad request: parameter is not string");
             return;

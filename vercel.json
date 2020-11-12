@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-        "api/mastodon/request_token.ts": {
+        "api/mastodon/v1/request_token.ts": {
             "maxDuration": 3
         },
         "api/slack/oauth.ts": {
