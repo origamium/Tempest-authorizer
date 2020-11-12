@@ -53,7 +53,7 @@ const mastodonRequestToken = (): FastifyInstance => {
                 }),
             });
 
-            const json = result.json();
+            const json = await result.json();
 
             res.status(200);
             res.header("content-type", "application/json");
