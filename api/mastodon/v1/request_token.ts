@@ -5,6 +5,7 @@ import fastifyCors from "fastify-cors";
 import fetch from "node-fetch";
 import { ProviderData, mstdnjp, pawoo } from "../apikeys";
 import formUrlEncoded from "form-urlencoded";
+import jsonToFormData from "json-form-data"
 
 const getProviderData = (provider: string): ProviderData | never => {
     switch (provider) {
@@ -44,7 +45,7 @@ const mastodonRequestToken = (): FastifyInstance => {
             const provider = getProviderData(providerName);
             const result = await fetch(provider.url, {
                 method: "POST",
-                body: formUrlEncoded({
+                body: jsonToFormData({
                     client_id: provider.apiKey,
                     client_secret: provider.apiSecret,
                     redirect_uri: "urn:ietf:wg:oauth:2.0:oob",

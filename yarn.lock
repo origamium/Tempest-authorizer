@@ -79,6 +79,11 @@
   resolved "https://registry.yarnpkg.com/@types/form-urlencoded/-/form-urlencoded-2.0.1.tgz#5c7789aca2681564116c3d278359232527e14ba1"
   integrity sha512-Kz3LwezuNvsQF8ZcswMv4b5ZhKmjTkH2Rxle6l/520Npvaxho6b4HN9lStp6HhGrZsL/rwJHpWK9vM1RA7uZbw==
 
+"@types/json-form-data@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@types/json-form-data/-/json-form-data-1.7.0.tgz#6eaa20f8f5c30690bdbe329793af0e7d44fc2ab7"
+  integrity sha512-BgszceuEk7hcG8Pfc1iouFYHQwnUSANqdAMr5Ur/KhGudiBn/bFmk9NevEwOJlShFXMj24vOqq5fy5IpaXe2eg==
+
 "@types/json-schema@^7.0.3":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
@@ -1033,6 +1038,11 @@ js-yaml@^3.13.1:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+json-form-data@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/json-form-data/-/json-form-data-1.7.2.tgz#9f02b0d577e1fa653fc622322db873b5d41cc582"
+  integrity sha512-hMfmLSsnHsKWEWiPxy+0rfmty9eSAxok08ly/C1J8g8WV8ncJbXejyweVcDIL68CP3wmpe+BYhaSwi0T4Rguwg==
 
 json-parse-better-errors@^1.0.1:
   version "1.0.2"
