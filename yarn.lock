@@ -86,10 +86,10 @@
   resolved "https://registry.yarnpkg.com/@types/form-urlencoded/-/form-urlencoded-2.0.1.tgz#5c7789aca2681564116c3d278359232527e14ba1"
   integrity sha512-Kz3LwezuNvsQF8ZcswMv4b5ZhKmjTkH2Rxle6l/520Npvaxho6b4HN9lStp6HhGrZsL/rwJHpWK9vM1RA7uZbw==
 
-"@types/json-form-data@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@types/json-form-data/-/json-form-data-1.7.0.tgz#6eaa20f8f5c30690bdbe329793af0e7d44fc2ab7"
-  integrity sha512-BgszceuEk7hcG8Pfc1iouFYHQwnUSANqdAMr5Ur/KhGudiBn/bFmk9NevEwOJlShFXMj24vOqq5fy5IpaXe2eg==
+"@types/json-form-data@1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@types/json-form-data/-/json-form-data-1.7.2.tgz#d5923a71849fe097b1dbed85f4bd75613561e116"
+  integrity sha512-IJE4z2Dgh2vsjDJP1jSt1+zdVYCxPwp3UHYyzKhz0vcG/Gg1pOW9+xwicXPW2pDHms1cXYhl5MPwovRUe6DkWQ==
 
 "@types/json-schema@^7.0.3":
   version "7.0.5"
