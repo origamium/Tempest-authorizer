@@ -28,7 +28,7 @@
         "@now/node": "1.8.5",
         "@types/form-data": "2.5.0",
         "@types/form-urlencoded": "2.0.1",
-        "@types/json-form-data": "1.7.0",
+        "@types/json-form-data": "1.7.2",
         "@types/micro-cors": "0.1.1",
         "@types/node": "14.14.9",
         "@types/node-fetch": "2.5.7",
