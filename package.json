@@ -22,7 +22,7 @@
         "form-urlencoded": "4.2.1",
         "json-form-data": "1.7.2",
         "micro-cors": "0.1.1",
-        "node-fetch": "2.6.1"
+        "node-fetch": "3.1.1"
     },
     "devDependencies": {
         "@now/node": "1.8.5",
