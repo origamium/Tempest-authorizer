@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "fastify": "3.8.0",
-        "fastify-cors": "4.1.0",
+        "fastify-cors": "6.1.0",
         "fastify-formbody": "5.0.0",
         "form-data": "3.0.0",
         "form-urlencoded": "4.2.1",
