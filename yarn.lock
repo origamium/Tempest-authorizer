@@ -730,19 +730,32 @@ fastify-error@^0.2.0:
   resolved "https://registry.yarnpkg.com/fastify-error/-/fastify-error-0.2.0.tgz#9a1c28d4f42b6259e7a549671c8e5e2d85660634"
   integrity sha512-zabxsBatj59ROG0fhP36zNdc5Q1/eYeH9oSF9uvfrurZf8/JKfrJbMcIGrLpLWcf89rS6L91RHWm20A/X85hcA==
 
-fastify-formbody@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/fastify-formbody/-/fastify-formbody-5.0.0.tgz#dcac930e8fe5c83eb56a6917672bc4b7d2b4b5c4"
-  integrity sha512-W79/hq6xGyV4lFsgt+qgKHPorGu4RzAhFQ5GKXI0T8DbkEMx+7gjFAD2y+q194vMMiIvMhuE7j6JyCEZVMOHYw==
+"fastify-formbody-deprecated@npm:fastify-formbody@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/fastify-formbody/-/fastify-formbody-5.2.0.tgz#942f0847f106888cad419812590cfff7ffb61f92"
+  integrity sha512-d8Y5hCL82akPyoFiXh2wYOm3es0pV9jqoPo3pO9OV2cNF0cQx39J5WAVXzCh4MSt9Z2qF4Fy5gHlvlyESwjtvg==
   dependencies:
-    fastify-plugin "^2.3.2"
+    fastify-plugin "^3.0.0"
 
-fastify-plugin@^2.0.0, fastify-plugin@^2.3.2:
+fastify-formbody@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/fastify-formbody/-/fastify-formbody-5.3.0.tgz#c125902b9c07c9d94c1b4a06561896e97968ec69"
+  integrity sha512-7cjFV2HE/doojyfTwCLToIFD6Hmbw2jVTbfqZ2lbUZznQWlSXu+MBQgqBU8T2nHcMfqSi9vx6PyX0LwTehuKkg==
+  dependencies:
+    fastify-formbody-deprecated "npm:fastify-formbody@5.2.0"
+    process-warning "^1.0.0"
+
+fastify-plugin@^2.0.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-2.3.4.tgz#b17abdc36a97877d88101fb86ad8a07f2c07de87"
   integrity sha512-I+Oaj6p9oiRozbam30sh39BiuiqBda7yK2nmSPVwDCfIBlKnT8YB3MY+pRQc2Fcd07bf6KPGklHJaQ2Qu81TYQ==
   dependencies:
     semver "^7.3.2"
+
+fastify-plugin@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-3.0.1.tgz#79e84c29f401020f38b524f59f2402103fd21ed2"
+  integrity sha512-qKcDXmuZadJqdTm6vlCqioEbyewF60b/0LOFCcYN1B6BIZGlYJumWWOYs70SFYLDAH4YqdE1cxH/RKMG7rFxgA==
 
 fastify-warning@^0.2.0:
   version "0.2.0"
@@ -1338,6 +1351,11 @@ prettier@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"
   integrity sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
+
+process-warning@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/process-warning/-/process-warning-1.0.0.tgz#980a0b25dc38cd6034181be4b7726d89066b4616"
+  integrity sha512-du4wfLyj4yCZq1VupnVSZmRsPJsNuxoDQFdCFHLaYiEbFBD7QE0a+I4D7hOxrVnh78QE/YipFAj9lXHiXocV+Q==
 
 progress@^2.0.0:
   version "2.0.3"
