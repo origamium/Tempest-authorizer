@@ -15,7 +15,7 @@
         "lint:fix": "run-p -l -n -c --aggregate-output lint:fix:*"
     },
     "dependencies": {
-        "fastify": "3.8.0",
+        "fastify": "3.29.4",
         "fastify-cors": "4.1.0",
         "fastify-formbody": "5.0.0",
         "form-data": "3.0.0",
